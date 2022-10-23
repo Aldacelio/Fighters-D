@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    position: relative;
+    display: inline-block;
+}
+
+.health-bar-and-timer{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+
+.health-bar{
+    height: 30px;
+    background-color: red;
+}
+
+#timer{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-players{
+    width: 100%;
+    height: 30px;
+    position: relative;
+}
+
+.container-players .player1{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bar{
+    position: absolute;
+    background-color: rgb(8, 196, 8);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.decrement-player2{
+    left: 0;
+}
+
+#champion{
+    position: absolute;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: none;
+}

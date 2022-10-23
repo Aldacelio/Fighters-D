@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de luta</title>
+    <link rel="stylesheet" href="./Css/style.css">
+    <script defer src="./javascript/script.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!--health bar and timer-->
+        <div class="health-bar-and-timer">
+
+            <!--health bar player1-->
+            <div class="container-players player1">
+                <div class="health-bar"></div>
+                <!--decrement health bar player2-->
+                <div class="bar decrement-player1" id="playerHealth"></div>
+            </div>
+            <!--timer-->
+            <div id="timer">10</div>
+            
+            <div class="container-players">
+                <!--health bar player2-->
+                <div class="health-bar"></div>
+                <!--decrement health bar player2-->
+                <div class="bar decrement-player2" id="enemyHealth"></div>
+            </div>
+
+        </div>
+
+        <div id="champion"></div>
+
+        <canvas></canvas>
+
+    </div>
+    
+</body>
+</html>
