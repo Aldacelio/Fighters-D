@@ -1,8 +1,23 @@
 *{
     box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../Images/backgroundMenu.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2.5vh 0;
+    overflow: hidden;
 }
 
 .container{
+    margin: 0;
+    padding: 0;
     position: relative;
     display: inline-block;
 }
