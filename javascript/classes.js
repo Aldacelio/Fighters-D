@@ -94,8 +94,6 @@ class Figther extends Sprite {
         } else {
             this.velocity.y += gravity;
         }
-
-        console.log(this.position.y);
     }
 
     attack() {
