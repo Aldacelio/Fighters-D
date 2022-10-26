@@ -68,7 +68,12 @@ const player = new Figther({
         attack1:{
             imageSrc: '../Images/Player1/Attack1.png',
             frameMax: 6
+        },
+        takeHit:{
+            imageSrc: '../Images/Player1/Take Hit - white silhouette.png',
+            frameMax: 4
         }
+
     },
     attackBox: {
         offset: {
@@ -121,6 +126,10 @@ const enemy = new Figther({
         attack1:{
             imageSrc: '../Images/Player2/Attack1.png',
             frameMax: 4
+        },
+        takeHit:{
+            imageSrc: '../Images/Player2/Take hit.png',
+            frameMax: 3
         }
     }, 
     attackBox: {
@@ -212,8 +221,9 @@ function animate(){
         })&&
         player.isAttacking && player.frameCurrent ===4
     ){
+        enemy.takeHit(10)
         player.isAttacking = false;
-        enemy.health -= 10;
+        
         document.querySelector('#enemyHealth').style.width = enemy.health+'%';
     }
 
@@ -229,8 +239,8 @@ function animate(){
         })&&
         enemy.isAttacking && enemy.frameCurrent === 2
     ){
+        player.takeHit(5)
         enemy.isAttacking = false;
-        player.health -= 5;
         document.querySelector('#playerHealth').style.width = player.health+'%';
     }
 
