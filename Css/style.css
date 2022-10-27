@@ -7,16 +7,6 @@
     padding: 0;
     font-family: 'Press Start 2P', cursive;
 }
-/* 
-body{
-    background-image: url('../Images/backgroundMenu.jpg');
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5.5vh;
-    overflow: hidden;
-} */
 
 .container{
     margin: 0;
