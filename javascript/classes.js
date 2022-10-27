@@ -71,6 +71,7 @@ class Figther extends Sprite {
         this.framesElapsed;
         this.framesHold;
         this.sprites = sprites;
+        this.dead = false;
 
         for (const sprite in this.sprites) {
             sprites[sprite].image = new Image();
@@ -80,8 +81,9 @@ class Figther extends Sprite {
 
     update() {
         this.draw();
-        this.animateFrames();
-
+        if(!this.dead){
+            this.animateFrames();
+        }
         this.attackBox.position.x = this.position.x + this.attackBox.offset.x;
         this.attackBox.position.y = this.position.y + this.attackBox.offset.y;
 
@@ -101,12 +103,24 @@ class Figther extends Sprite {
         this.switchSprite('attack1');
     }
 
-    takeHit(health){
-        this.switchSprite('takeHit');
+    takeHit(health) {
         this.health -= health;
+        if(this.health <= 0){
+            this.switchSprite('death')
+        }else{
+            this.switchSprite('takeHit');
+        }
     }
 
     switchSprite(sprite) {
+
+        if(this.image === this.sprites.death.image){
+            if(this.frameCurrent === this.sprites.death.frameMax - 1){
+                this.dead = true;
+            }
+            return
+        }
+
         if (this.image === this.sprites.attack1.image && this.frameCurrent < this.sprites.attack1.frameMax - 1) {
             return
         }
@@ -156,6 +170,13 @@ class Figther extends Sprite {
                 if (this.image !== this.sprites.takeHit.image) {
                     this.image = this.sprites.takeHit.image;
                     this.frameMax = this.sprites.takeHit.frameMax;
+                    this.frameCurrent = 0;
+                }
+                break;
+            case 'death':
+                if (this.image !== this.sprites.death.image) {
+                    this.image = this.sprites.death.image;
+                    this.frameMax = this.sprites.death.frameMax;
                     this.frameCurrent = 0;
                 }
                 break;

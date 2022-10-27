@@ -1,19 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 *{
     box-sizing: border-box;
     text-decoration: none;
     margin: 0;
     padding: 0;
+    font-family: 'Press Start 2P', cursive;
 }
-
+/* 
 body{
     background-image: url('../Images/backgroundMenu.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2.5vh 0;
+    padding-top: 5.5vh;
     overflow: hidden;
-}
+} */
 
 .container{
     margin: 0;
@@ -38,34 +41,40 @@ body{
 }
 
 #timer{
-    background-color: red;
+    background-color: black;
     width: 100px;
-    height: 100px;
+    height: 50px;
+    color: aliceblue;
     flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 4px solid white;
 }
 
 .container-players{
     width: 100%;
-    height: 30px;
     position: relative;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
 }
 
-.container-players .player1{
-    display: flex;
-    justify-content: flex-end;
+.player1{
+    border-left:  4px solid white;
 }
 
+.player2{
+    border-right:  4px solid white;
+}
 .bar{
     position: absolute;
-    background-color: rgb(8, 196, 8);
+    background-color: #10B981;
     top: 0;
     bottom: 0;
     right: 0;
     width: 100%;
 }
+
 
 .decrement-player2{
     left: 0;
@@ -81,4 +90,9 @@ body{
     right: 0;
     left: 0;
     display: none;
+}
+
+canvas{
+    width: 100vw;
+    height: 100vh;  
 }
