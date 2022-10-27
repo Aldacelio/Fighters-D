@@ -11,11 +11,11 @@ function determineWinner({player,enemy,timerId}){
     clearTimeout(timerId);
     champion.style.display = 'flex';
     if(player.health === enemy.health){
-        champion.innerHTML = 'EMPATE';
+        nome.innerHTML = 'EMPATE';
     }else if(player.health > enemy.health){
-        champion.innerHTML = 'JOGADOR 1 GANHOU';
+        nome.innerHTML = localStorage.getItem('Jogador1').toUpperCase();
     }else if(player.health < enemy.health){
-        champion.innerHTML = 'JOGADOR 2 GANHOU';
+        nome.innerHTML = localStorage.getItem('Jogador2').toUpperCase();
     }
 }
 

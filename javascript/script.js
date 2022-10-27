@@ -1,6 +1,7 @@
 const canvas = document.querySelector('canvas');
 const contexto = canvas.getContext('2d');
 const champion = document.querySelector('#champion');
+const nome = document.querySelector('#nome');
 
 
 canvas.width = 1024;
