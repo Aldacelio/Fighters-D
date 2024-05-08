@@ -10,7 +10,7 @@
 
 ## Objetivo do projeto
 
-* O objetivo do projeto é criar um jogo de luta onde os jogadores podem se enfrentarem em uma batalha de 1v1.
+* O objetivo do projeto é criar um jogo de luta onde os jogadores podem se enfrentar em uma batalha de 1v1.
 
 ## Boas práticas
 
