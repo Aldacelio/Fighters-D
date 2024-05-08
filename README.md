@@ -1,6 +1,6 @@
 <h1 align = "center">FIGHTERS D</h1> 
 
-<img src="" width="1300px">
+<img src="https://github.com/Aldacelio/Fighters-D/blob/main/Images/banner.jpg?raw=true" width="1300px">
 
 ## Tecnologias usadas
 
