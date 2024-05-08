@@ -1,6 +1,6 @@
 <h1 align = "center">FIGHTERS D</h1> 
 
-<img src="" width="1300px">
+<img src="https://raw.githubusercontent.com/Aldacelio/Fighters-D/main/Images/banner.jpg" width="1300px">
 
 ## Tecnologias usadas
 
@@ -22,14 +22,14 @@
 
 ### Jogadores
 
-<img src="" width="580px">
+<img src="https://raw.githubusercontent.com/Aldacelio/Fighters-D/main/Images/Jogadores.gif" width="580px">
 
 ### Luta
 
-<img src="" width="580px">
+<img src="https://raw.githubusercontent.com/Aldacelio/Fighters-D/main/Images/Luta.gif" width="580px">
 
 ### Vencedor
 
-<img src="" width="580px">
+<img src="https://raw.githubusercontent.com/Aldacelio/Fighters-D/main/Images/Vencedor.gif" width="580px">
 
 </div>
